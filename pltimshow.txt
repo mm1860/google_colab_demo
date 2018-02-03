@@ -1,0 +1,9 @@
+#下载一个图片到colab，并显示出来
+!wget https://www.google.com/logos/doodles/2018/elizabeth-blackwells-197th-birthday-5658618786480128-l.png
+from PIL import Image
+im=Image.open('elizabeth-blackwells-197th-birthday-5658618786480128-l.png')
+print (im.size)
+import matplotlib.pyplot as plt
+plt.figure("dog")
+plt.imshow(im)
+plt.show()
