@@ -1,0 +1,8 @@
+opencv 图片数据类型都是 uint8,
+np.zeros([img.shape[0],6,3],dtype=np.uint8)
+否则图是黑的
+
+为图增加宽度
+img = cv2.imread('./data_rpn/3_1.png')
+dim=np.zeros([img.shape[0],6,3],dtype=np.uint8)
+img=np.hstack((img,dim))
